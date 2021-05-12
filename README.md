@@ -1,1 +1,1 @@
-coding problems, challenges, algorithms in Clojure
+coding problems, challenges, algorithms solved in Clojure
