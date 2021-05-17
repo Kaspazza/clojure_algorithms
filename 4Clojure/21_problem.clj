@@ -1,7 +1,7 @@
 ;; Nth Element
 ;; https://www.4clojure.com/problem/21
 
-(= ((fn [col step] (if (= step 0) (first col) (recur (rest col) (- step 1)))) '(4 5 6 7) 2) 6)
+(= ((fn [col step] (if (= step 0) (first col) (recur (rest col) (dec step)))) '(4 5 6 7) 2) 6)
 
 (= (#(first (drop %2 %)) [:a :b :c] 0) :a)
 
