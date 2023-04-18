@@ -1,5 +1,5 @@
 {:paths ["src" "resources"]
- :deps {org.clojure/clojure {:mvn/version "1.10.3"}}
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}}
  :aliases
  {:run-m {:main-opts ["-m" "kaspazza.exercism"]}
   :run-x {:ns-default kaspazza.exercism
@@ -12,6 +12,7 @@
                   :deps/root "slim"}}
           :ns-default build}
   :test {:extra-paths ["test"]
+         :main-opts ["-m" "cognitect.test-runner"]
          :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}
                       io.github.cognitect-labs/test-runner
                       {:git/tag "v0.5.0" :git/sha "48c3c67"}}}}}
